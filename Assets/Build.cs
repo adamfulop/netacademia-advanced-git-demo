@@ -1,4 +1,5 @@
-﻿using UnityEditor;
+﻿#if UNITY_EDITOR
+using UnityEditor;
 
 public class Build {
     public static void PerformBuild() {
@@ -6,3 +7,5 @@ public class Build {
             BuildTarget.Android, BuildOptions.Development);
     }
 }
+
+#endif
